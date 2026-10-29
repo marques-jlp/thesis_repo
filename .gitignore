@@ -1,0 +1,15 @@
+# Claude Code
+.claude/
+
+# Model weights
+*.pt
+*.pth
+
+# Python
+__pycache__/
+*.pyc
+
+# Logs
+logs/
+*.err
+*.log

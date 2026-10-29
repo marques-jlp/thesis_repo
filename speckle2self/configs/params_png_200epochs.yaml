@@ -1,0 +1,31 @@
+data:
+  type: png
+  image_dir: ../../cropped_pngs4
+  interp_method: linear
+  res: 608x320
+
+training:
+  lr: 0.001 
+  batch_size: 16
+  optimizer: adam
+  b1: 0.5
+  b2: 0.999
+  epoch: 200
+  print_every: 20
+  checkpoint_every: 20
+  visualize_every: 20
+  save_after_epoch: 20
+  output_dir: save_models/PNG
+
+  # Loss type
+  loss_rec: L2
+  loss_consist: L1
+
+  # loss weights
+  High_res_weight_rec: 1.0
+  Mid_res_weight_rec: 1.0
+  Low_res_weight_rec: 1.0
+
+  Hl_res_weight_consist: 1.0
+  HM_res_weight_consist: 1.0
+  ML_res_weight_consist: 1.0
